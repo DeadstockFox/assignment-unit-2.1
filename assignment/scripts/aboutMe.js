@@ -91,6 +91,16 @@ console.log(petStatus);
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
+let mostPets;
+if (pets >= friendPets) {
+  mostPets = pets;
+}
+else mostPets = friendPets;
+console.log(mostPets);
+// Am I missing something or is this simple conditional? The three possibilities
+// are that 'pets' is less than, equal to, or greater than 'friendPets'. The if statement determines
+// whether 'pets' is greater than or equal than friendPets, If not then the only solution is friendPets
+// is greater and its value is assigned to mostPets
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
@@ -100,11 +110,26 @@ console.log(petStatus);
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
-
+let luckyResult;
+switch (7) {
+  case 1:
+    luckyResult = 'First is the worst';
+    break;
+  case 2:
+    luckyResult = 'Second is the best';
+    break;
+  case 3: 
+    luckyResult = 'Third is the one with the polka dot dress';
+    break;
+  default: 
+    luckyResult = 'Luck is what happens when preparation meets opportunity';
+}
+console.log(luckyResult);
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
-
-
-
+let result2 =
+  adventurous == true ? 'Adventures are great!' : 'How about we stay home?';
+  console.log(result2);
+// This is so much cleaner!
 
 
 
